@@ -45,3 +45,7 @@ pdks/
 
 # Venv
 /venv
+
+# Pyverilog
+parser.out
+parsetab.py

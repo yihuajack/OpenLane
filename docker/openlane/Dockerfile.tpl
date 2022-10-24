@@ -25,7 +25,11 @@ ENV OPENROAD=/build/
 ENV PATH=$OPENLANE_ROOT:$OPENLANE_ROOT/scripts:$OPENROAD/bin:$OPENROAD/bin/Linux-x86_64:$OPENROAD/pdn/scripts:$PATH
 ENV LD_LIBRARY_PATH=$OPENROAD/lib:$OPENROAD/lib/Linux-x86_64:$LD_LIBRARY_PATH
 ENV MANPATH=$OPENROAD/share/man:$MANPATH
-ENV PDK_ROOT /build/pdk
+
+ENV PYTHON_LIBRARY=/lib64/libpython3.6m.so.1.0
+ENV FAULT_IVL_BASE=/build/lib/ivl
+ENV FAULT_IVERILOG=/build/bin/iverilog
+ENV FAULT_VVP=/build/bin/vvp
 
 # Locale
 RUN localedef -c -f UTF-8 -i en_US en_US.UTF-8
